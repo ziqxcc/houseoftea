@@ -12,7 +12,7 @@ function MenuSec() {
       }}
     >
       <div className="w-[90%] max-w-[1200px] flex items-center flex-col">
-      <p className="text-primary uppercase text-center" data-aos="fade-up">CHOOSE BEST COFFEE</p>
+      <p className="text-primary uppercase text-center">CHOOSE BEST COFFEE</p>
         <h6 className="sub-title" data-aos="fade-up">Kaffen Popular Coffee Menu</h6>
         <div className="w-full bg-black mt-10 p-20"></div>
       </div>

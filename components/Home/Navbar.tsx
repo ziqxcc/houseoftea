@@ -1,11 +1,38 @@
+"use client"
 import React from "react";
 import { MdOutlineAccessTimeFilled } from "react-icons/md";
 import { TiLocation } from "react-icons/ti";
-
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import styles from './Navbar.module.css';
 function Navbar() {
+
+  const pathname = usePathname();
+    const NAV_ITEM = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "About",
+      link: "/about",
+    },
+    {
+      name: "Location",
+      link: "/location",
+    },
+    {
+      name: "Menu",
+      link: "/menu",
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+    },
+  ];
   return (
-    <div className="z-10 w-full flex flex-col">
-      <div className="bg-zinc-800 w-full flex justify-center">
+    <>
+      <div className="bg-zinc-900 w-full flex justify-center">
         <div className="flex items-center justify-between w-[90%] max-w-[1200px] gap-2 text-primary py-[8px]">
           <p className="flex items-center gap-1 text-sm">
             <MdOutlineAccessTimeFilled />
@@ -19,19 +46,17 @@ function Navbar() {
           </p>
         </div>
       </div>
-      <header className="w-full flex justify-center bg-zinc-900 nav-bar">
+      <header className="z-20 w-full flex justify-center bg-black border-b border-zinc-900 nav-bar">
         <div className="h-20 flex justify-between items-center w-[90%] max-w-[1200px]">
-          <p className="text-3xl font-bold text-white">Demo Name</p>
-          <div className="flex gap-10 text-white font-[600]">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Location</a>
-            <a href="">Menu</a>
-            <a href="">Contact</a>
+          <img src="assets/logo.png" alt="Logo" className="w-12" />{" "}
+          <div className="flex gap-10 tracking-wider">
+            {NAV_ITEM.map((item:any,index:number)=>(
+              <a key={index} className={`hover:text-white hover:font-[500] duration-300 ${pathname==="/" && pathname === item.link ? "text-white font-[700]" : "text-zinc-400 font-[300]"}`} href={item.link}>{item.name}</a>
+            ))}
           </div>
         </div>
       </header>
-    </div>
+    </>
   );
 }
 
