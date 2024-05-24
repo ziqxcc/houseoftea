@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     "Best tea near me ",
     "Best cafeteria near me",
   ],
-  metadataBase: new URL("https://quest-frontend-two.vercel.app"),
+  metadataBase: new URL("https://houseoftea-cafe.vercel.app/"),
   openGraph: {
-    url: "https://quest-frontend-two.vercel.app",
+    url: "https://houseoftea-cafe.vercel.app/",
     description:
       "We're your spot for yummy bites and tasty teas. With almost forty-five branches in Abu Dhabi and one each in Dubai and Sharjah, we're here to make your snack time awesome. Owned by Mr. Majed Saad Abdullah Ali Almenhali and Rashid Thaniyullathil, our menu is all about quick and tasty. Whether you're picking up food or ordering from your car, we've got you covered. Join us for simple and delicious treats. House of Tea Cafeteria is about bringing joy to your taste buds, whether you're in Abu Dhabi, Dubai, or Sharjah. Come enjoy good food with us, wherever you are!",
-    images: ["https://www.questfoundation.in/thumb.jpg"],
+    images: ["https://houseoftea-cafe.vercel.app/assets/logo.png"],
   },
 };
 
