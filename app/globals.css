@@ -3,7 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html{
+  scroll-behavior: smooth;
+  /* text-emphasis-color:#b99272 ; */
+}
 :root {
   --primary: #b99272;
   --font: "Oswald", sans-serif;
@@ -37,9 +40,35 @@ h1 {
 .btn-pry {
   position: relative;overflow: hidden;
 }
+.bg-darkgray{
+  background: #0e1317;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .btn-pry .btn-before {
   position: absolute;
-  height: 50px;
+  height: 60px;
   width: 130%;rotate: -15deg;transform: translate(0, -110px);
   background-color: #fff;
   top: 0;right: 0;transition: .7s ease;z-index: -1;
@@ -47,6 +76,9 @@ h1 {
 .btn-pry:hover .btn-before {
   transform: translate(0);
   rotate: 0deg;
+}
+.btn-pry:hover a{
+  color: var(--primary);
 }
 .bg-primary {
   background-color: var(--primary);
@@ -57,7 +89,17 @@ h1 {
 .border-primary {
   border-color: var(--primary);
 }
-
+.outline-primary{
+  outline-color: var(--primary);
+}
+.outline-primary-50{
+  outline-color: #b992725c;
+}
+.bg-secondary{
+  background: #0e1317;
+}.border-secondary{
+  border-color: #0e1317;
+}
 .image-slider {
   z-index: 0;
   margin: 0 auto;
@@ -279,4 +321,21 @@ h1 {
   font-size: 14px;
   line-height: 1.6;
   text-transform: capitalize;
+}
+
+
+
+/* .swiper-pagination {
+  margin-bottom: -40px !important ;
+} */
+.mySwiper {
+  padding-bottom: 40px !important;
+}
+.swiper-pagination-bullet{
+  background: #bcbcbc !important;transition: .5s !important;
+}
+.swiper-pagination-bullet-active{
+  background: var(--primary) !important;
+  width: 30px !important;
+  border-radius: 25px !important;
 }
