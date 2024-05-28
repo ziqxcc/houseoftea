@@ -10,6 +10,7 @@ import Footer from "@/components/Common/Footer";
 import Testimonial from "@/components/Home/Testimonial";
 import Booking from "@/components/Common/Booking";
 import Counts from "@/components/Home/Counts";
+import ImageSwiper from "@/components/Home/ImageSwiper";
 
 export default function Home() {
   const Sliders = dynamic(() => import("../components/Home/HeroSec"), {
@@ -23,9 +24,8 @@ export default function Home() {
       <AboutSec />
       <SpecialSec/>
       <Testimonial/>
+      <ImageSwiper/>
       <Counts/>
-      <Booking/>
-      <Footer/>
     </main>
   );
 }

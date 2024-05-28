@@ -5,6 +5,8 @@ import JourneySec from "./JourneySec";
 import SpecialSec from "@/components/Home/SpecialSec";
 import Booking from "@/components/Common/Booking";
 import Footer from "@/components/Common/Footer";
+import Service from "./Service";
+import Testimonial from "@/components/Home/Testimonial";
 
 function page() {
   return (
@@ -13,8 +15,8 @@ function page() {
       <AboutSec />
       <SpecialSec />
       <JourneySec />
-      <Booking />
-      <Footer />
+      <Service/>
+      <Testimonial/>
     </div>
   );
 }
