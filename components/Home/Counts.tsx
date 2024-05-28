@@ -18,12 +18,12 @@ function Counts() {
       ];
   return (
     <section className=" py-20 text-white flex justify-center bg-secondary">
-      <div className="w-[90%] max-w-[1200px] grid grid-cols-1 md:grid-cols-3">
+      <div className="w-[80%] max-w-[1200px] grid grid-cols-1 md:grid-cols-3 gap-5">
         {SPEC.map((item:any,index:number)=>(
-            <div className="flex items-center justify-center gap-5">
-          <h5 className="text-6xl font-[300] text-primary">{item.count}+</h5>
+            <div className="flex items-center justify-center gap-10 md:gap-5">
+          <h5 className="text-4xl md:text-6xl font-[300] text-primary">{item.count}+</h5>
           <div>
-            <h5 className="text-2xl font-[400] text-white">{item.spec}</h5>
+            <h5 className="text-xl md:text-2xl font-[400] text-white">{item.spec}</h5>
             <p className="text-zinc-400">{item.dis}</p>
           </div>
         </div>

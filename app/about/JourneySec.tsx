@@ -30,19 +30,19 @@ function JourneySec() {
   ];
   return (
     <section className=" py-20 text-white flex justify-center bg-black">
-      <div className="w-[90%] max-w-[1200px] flex flex-col items-center">
+      <div className="w-[80%] max-w-[1200px] flex flex-col items-center">
         <p className="text-primary uppercase">Our Journey</p>
-        <h5 className="sub-title" data-aos="fade-up">
+        <h5 className="sub-title text-center" data-aos="fade-up">
           Our Successful Journey
         </h5>
-        <div className="bg-black grid grid-cols-2 md:grid-cols-4 p-10 pt-16 w-full gap-5" data-aos="fade-up">
+        <div className="bg-black grid grid-cols-1 md:grid-cols-4 md:p-10 pt-16 w-full gap-10 md:gap-5" data-aos="fade-up">
           {SPEC.map((item:any,index:number)=>(<div key={index} className="group">
-            <div className="bg-darkgray rounded-sm group-hover:outline outline-1 outline-primary-50 h-20 w-20 duration-300 outline-offset-4 flex items-center justify-center text-primary text-[40px]">
+            <div className="bg-darkgray rounded-sm group-hover:outline outline-1 outline-primary-50 h-20 w-20 duration-300 outline-offset-4 mx-auto md:m-0 flex items-center justify-center text-primary text-[40px]">
               {item.icon}
             </div>
-            <h1 className="text-[60px] text-primary mt-3">{item.count}+</h1>
-            <h4 className="text-[24px]">{item.spec}</h4>
-            <p className="text-zinc-500">{item.dis}</p>
+            <h1 className="text-[60px] text-primary mt-3 text-center md:text-left">{item.count}+</h1>
+            <h4 className="text-[24px] text-center md:text-left">{item.spec}</h4>
+            <p className="text-zinc-500 text-center md:text-left">{item.dis}</p>
           </div>))}
           
           

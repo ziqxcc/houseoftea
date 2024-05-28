@@ -4,6 +4,9 @@ import "./globals.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Navbar from "@/components/Common/Navbar";
+import Booking from "@/components/Common/Booking";
+import Footer from "@/components/Common/Footer";
+import ScrollToTop from "@/components/Common/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,7 +44,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
+        <ScrollToTop/>
         {children}
+        <Booking/>
+        <Footer/>
       </body>
     </html>
   );

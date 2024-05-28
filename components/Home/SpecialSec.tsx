@@ -19,11 +19,11 @@ function SpecialSec() {
       className=" py-24 duration-300 group text-white flex justify-center"
       style={{ background: "url(assets/category_bg.jpg)" }}
     >
-      <div className="w-[90%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-28">
-        <div className="grid grid-cols-2 gap-7" data-aos="fade-up">
-          <div className="flex flex-col gap-7 duration-700 -translate-y-2 group-hover:-translate-y-5" >
+      <div className="w-[80%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-28">
+        <div className="grid grid-cols-2 gap-4 md:gap-7" data-aos="fade-up">
+          <div className="flex flex-col gap-4 md:gap-7 duration-700 -translate-y-2 group-hover:-translate-y-5" >
             <div
-              className="h-80 w-full"
+              className="h-60 md:h-80 w-full"
               style={{
                 background: "url(images/grid_gal3.jpg)",
                 backgroundSize: "cover",backgroundPosition:"center",
@@ -32,7 +32,7 @@ function SpecialSec() {
               
             </div>
             <div
-              className="h-80 w-full"
+              className="h-60 md:h-80 w-full"
               style={{
                 background: "url(images/grid_gal4.jpg)",
                 backgroundSize: "cover",backgroundPosition:"center",
@@ -41,9 +41,9 @@ function SpecialSec() {
               
             </div>
           </div>
-          <div className="flex flex-col gap-7 duration-700 translate-y-2 group-hover:translate-y-5">
+          <div className="flex flex-col gap-4 md:gap-7 duration-700 translate-y-2 group-hover:translate-y-5">
             <div
-              className="h-80 w-full"
+              className="h-60 md:h-80 w-full"
               style={{
                 background: "url(images/grid_gal1.jpg)",
                 backgroundSize: "cover",backgroundPosition:"center",
@@ -52,7 +52,7 @@ function SpecialSec() {
              
             </div>
             <div
-              className="h-80 w-full"
+              className="h-60 md:h-80 w-full"
               style={{
                 background: "url(images/grid_gal2.jpg)",
                 backgroundSize: "cover",backgroundPosition:"center",

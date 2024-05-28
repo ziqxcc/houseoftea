@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { GrStar } from "react-icons/gr";
 import { IoStar } from "react-icons/io5";
+import { FaStar } from "react-icons/fa";
 
 function Testimonial() {
   const TEST = [
@@ -57,15 +58,23 @@ function Testimonial() {
     },
   ];
   return (
-    <section className=" py-28 text-white flex justify-center bg-black">
-      <div className="w-[90%] max-w-[1200px] flex flex-col items-center">
+    <section className="testimonials py-28 text-white flex justify-center bg-black">
+      <div className="w-[80%] max-w-[1200px] flex flex-col items-center">
         <p className="text-primary uppercase">CUSTOMER FEEDBACK</p>
-        <h5 className="sub-title" data-aos="fade-up">
+        <h5 className="sub-title text-center" data-aos="fade-up">
           What Our Clients Say
         </h5>
         <Swiper
-          slidesPerView={4}
-          spaceBetween={20}
+          breakpoints={{
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 15,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+          }}
           pagination={{
             clickable: true,
           }}
@@ -93,11 +102,11 @@ function Testimonial() {
                     ></div>
                   </div>
                   <div className="text-primary mt-5 mb-3 flex items-center gap-1 justify-center">
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
-                    <IoStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
                   </div>
                   <p className="text-zinc-400 text-[15px]">{item.dis}</p>
                   <h6 className="font-bold mt-5">{item.name}</h6>

@@ -5,8 +5,8 @@ function AboutSec() {
   
   return (
     <section className="bg-black py-20 text-white flex justify-center group">
-      <div className="w-[90%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="flex flex-col justify-center">
+      <div className="w-[80%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="flex flex-col justify-center ">
           <p className="text-primary uppercase">Our Story</p>
           <h5 className="sub-title" data-aos="fade-up">
             The Threads We Weave
@@ -33,7 +33,7 @@ function AboutSec() {
             <div className="btn-before z-0"></div>
           </div>
         </div>
-        <div className="group-hover:translate-x-1 duration-500">
+        <div className="group-hover:translate-x-1 duration-500 hidden md:block">
           <img src="images/about_img.png" className="w-[600px]" />
         </div>
       </div>
