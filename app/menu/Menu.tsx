@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 
 function Menu() {
@@ -361,7 +361,10 @@ function Menu() {
         { name: "MEGA CLUB MAJLIS", pic: "mega club majlis.jpg" },
         { name: "MAJLIS CLUB", pic: "majlis club.jpg" },
         { name: "FAMILY MIX", pic: "family mix.jpg" },
-        { name: "HOUSE OF TEA SPECIAL CLUB", pic: "house of tea special club.jpg" },
+        {
+          name: "HOUSE OF TEA SPECIAL CLUB",
+          pic: "house of tea special club.jpg",
+        },
         { name: "ZINGER CLUB", pic: "zinger club.jpg" },
         { name: "ARABIC CLUB", pic: "emarati club.jpg" },
         { name: "EXPRESS CLUB", pic: "express club.jpg" },
@@ -607,15 +610,14 @@ function Menu() {
       dis: "Sed ut perspiciatis unde",
     },
   ];
-  
-  
-  const [activeSection, setActiveSection] = useState<string>('one');
+
+  const [activeSection, setActiveSection] = useState<string>("one");
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY + 100;
-    let newActiveSection = 'one';
+    let newActiveSection = "one";
 
-    MENU.forEach((name:any, i:any) => {
+    MENU.forEach((name: any, i: any) => {
       const sectionElement = document.getElementById(name);
       if (sectionElement && sectionElement.offsetTop <= scrollPosition) {
         newActiveSection = name;
@@ -626,12 +628,12 @@ function Menu() {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll(); // Set initial active section
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
   return (
     <div className="bg-black flex flex-col items-center w-full">
       <section className="w-[80%] max-w-[1200px] flex flex-col items-center py-28 text-white">
@@ -691,16 +693,22 @@ function Menu() {
             </div>
           </div>
         </div> */}
-        <div className="grid grid-cols-1 md:grid-cols-4 mt-10 w-full gap-10">
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-4 mt-10 w-full gap-10">
           <div className=" bg-black w-full SideBar" id="SideBar">
             {MENU.map((item: any, index: number) => (
-              <a href={`#${item.name}`} key={index} 
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById(item.name)?.scrollIntoView({ behavior: 'smooth' });
-              }}className="flex gap-y-3 md:gap-y-5 py-3 group">
+              <a
+                href={`#${item.name}`}
+                key={index}
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById(item.name)
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="flex gap-y-3 md:gap-y-5 py-3 group"
+              >
                 {/* {item.name.charAt(0).toUpperCase() + item.name.slice(1)} */}
-              
+
                 {/* <div className="w-28 duration-300 h-20 rounded-xl overflow-hidden box-border">
                     <img
                       src={`images/${item.image}`}
@@ -708,7 +716,9 @@ function Menu() {
                     />
                   </div> */}
                 <div className="w-full">
-                  <h5 className="text-xl md:text-2xl group-hover:text-zinc-300 duration-300">{item.name}</h5>
+                  <h5 className="text-xl md:text-2xl group-hover:text-zinc-300 duration-300">
+                    {item.name}
+                  </h5>
                   <div className="count-before text-primary md:w-full flex justify-end text-xl md:text-4xl">
                     <p className="text-right bg-black pl-4 z-10 text-Merienda group-hover:text-white duration-300">
                       {item.items.length}
@@ -718,18 +728,76 @@ function Menu() {
               </a>
             ))}
           </div>
-          <div className={`md:col-span-3 bg-secondary rounded-2xl flex gap-5 flex-col md:p-7 md:h-[2900px] overflow-y-scroll`}>
+          <div
+            className={`md:col-span-3 bg-secondary rounded-2xl flex gap-5 flex-col md:p-7 md:h-[2900px] overflow-y-scroll`}
+          >
             {MENU.map((item: any, index: number) => (
-              <section key={index} id={item.name} className={`grid grid-cols-1 md:grid-cols-3 gap-5  ${(index % 2===1) && "border-y-2 border-zinc-800 "} py-5 `}>
+              <section
+                key={index}
+                id={item.name}
+                className={`grid grid-cols-1 md:grid-cols-3 gap-5  ${
+                  index % 2 === 1 && "border-y-2 border-zinc-800 "
+                } py-5 `}
+              >
                 {item.items.map((item: any, index: number) => (
-                  <div key={index}  className=" flex flex-col items-start gap-2 group">
-                    <div className="w-full h-48 rounded-lg overflow-hidden"><img src={`menu/${item.pic || "eeee.png"}`} className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-1 duration-300" /></div>
-                    <h5 className="text-white text-lg duration-300 group-hover:text-xl">{item.name}</h5>
+                  <div
+                    key={index}
+                    className=" flex flex-col items-start gap-2 group"
+                  >
+                    <div className="w-full h-48 rounded-lg overflow-hidden">
+                      <img
+                        src={`menu/${item.pic || "eeee.png"}`}
+                        className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-1 duration-300"
+                      />
                     </div>
+                    <h5 className="text-white text-lg duration-300 group-hover:text-xl">
+                      {item.name}
+                    </h5>
+                  </div>
                 ))}
               </section>
             ))}
           </div>
+        </div>
+        <div className=" bg-black grid gap-3 w-full">
+          {MENU.map((item: any, index: number) => (
+            <div
+              key={index}
+              className="md:hidden bg-secondary collapse collapse-arrow"
+            >
+              <input
+                type="radio"
+                name="my-accordion-2"
+                defaultChecked={index === 0}
+              />
+              <div className="collapse-title text-xl font-medium">
+                <div className="w-full flex items-center justify-between">
+                  <h5>{item.name}</h5>
+                  <p className="text-primary mr-4 text-Merienda group-hover:text-white duration-300">
+                    {item.items.length}
+                  </p>
+                </div>
+              </div>
+              <div className="collapse-content grid grid-cols-2 gap-4">
+                {item.items.map((item: any, index: number) => (
+                 <div
+                 key={index}
+                 className=" flex flex-col items-start gap-2 group"
+               >
+                 <div className="w-full h-32 rounded-lg overflow-hidden">
+                   <img
+                     src={`menu/${item.pic || "eeee.png"}`}
+                     className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-1 duration-300"
+                   />
+                 </div>
+                 <h5 className="text-white  duration-300 group-hover:text-[17px]">
+                   {item.name}
+                 </h5>
+               </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </div>
