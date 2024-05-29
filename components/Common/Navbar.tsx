@@ -68,7 +68,7 @@ function Navbar() {
       </div>
       <header className="z-30 w-full flex justify-center bg-black border-b border-zinc-900 nav-bar">
         <div className="h-20 flex justify-between items-center w-[90%] max-w-[1200px]">
-          <img src="assets/logo.png" alt="Logo" className="w-12" />{" "}
+          <a href="/"><img src="assets/logo.png" alt="Logo" className="w-12" /></a>
           <div className=" gap-10 tracking-wider hidden md:flex">
             {NAV_ITEM.map((item:any,index:number)=>(
               <a key={index} className={`hover:text-white hover:font-[500] duration-500 ${pathname === item.link ? "text-white font-[700]" : "text-zinc-400 font-[300]"}`} href={item.link}>{item.name}</a>
@@ -83,8 +83,8 @@ function Navbar() {
             </a>
             <div className="btn-before z-0"></div>
           </div>
-          <div onClick={()=>setMenu(!menu)} className="md:hidden overflow-hidden flex flex-col gap-[6px] mr-3"><div className={`bg-white h-[2px] w-7 rounded-lg origin-top-left duration-300 ${menu ? "rotate-[37deg]" :""}`}></div>
-          <div className={`bg-white h-[2px] duration-300 rounded-lg ${menu ? "w-0":"w-7"}`}></div><div className={`bg-white h-[2px] w-7 rounded-lg origin-top-left duration-300 ${menu ? "-rotate-[37deg]" :""}`}></div></div>
+          <div onClick={()=>setMenu(!menu)} className="md:hidden flex flex-col gap-[6px] mr-3"><div className={`bg-white h-[2px] w-7 rounded-lg origin-center duration-300 ${menu ? "translate-y-2 rotate-[37deg]" :""}`}></div>
+          <div className={`bg-white h-[2px] duration-300 rounded-lg ${menu ? "w-0":"w-7"}`}></div><div className={`bg-white h-[2px] w-7 rounded-lg origin-center duration-300 ${menu ? "-translate-y-2 -rotate-[37deg]" :""}`}></div></div>
         </div>
         
       </header>

@@ -472,3 +472,60 @@ h1 {
 .actived{
   background-color: #0e1317 !important;
 }
+
+
+/* #nprogress .bar {
+  background: #b99272;
+  height: 3px;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #b99272, 0 0 5px #29d;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #29d;
+  border-left-color: #29d;
+} */
+
+
+.sliderContainer {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 400px; */
+  transition: width 0.5s ease;
+}
+.slide-row{
+  background:#000 !important ;
+}
+.active {
+  
+  background-color: #680f0f;
+  transform: scale(1.1);transition: width 0.5s ease;
+}.actived {
+  width: 400px !important;
+  transform: scale(1.1);background-color: #680f0f;
+}
+
+/* button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+} */
+.swiper_container{
+  background-color: #000 !important;
+  /* margin-bottom: 40px !important; */
+}
+
+.loc-SwiperSlide{
+  width: 80% !important;
+  max-width: 600px !important;overflow-y: hidden;
+}
