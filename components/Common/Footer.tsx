@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import {
+  GrAppsRounded,
   GrCaretRightFill,
   GrLocation,
   GrMail,
@@ -9,8 +10,37 @@ import {
   GrPhone,
 } from "react-icons/gr";
 import { HiOutlineArrowRight } from "react-icons/hi";
+import { RiCustomerServiceFill, RiInformation2Line } from "react-icons/ri";
+import { TbHome } from "react-icons/tb";
 
 function Footer() {
+  const NAV_ITEM = [
+    {
+      name: "Home",
+      link: "/",
+      icon: <TbHome />,
+    },
+    {
+      name: "About",
+      link: "/about",
+      icon: <RiInformation2Line />,
+    },
+    {
+      name: "Location",
+      link: "/location",
+      icon: <GrLocation />,
+    },
+    {
+      name: "Menu",
+      link: "/menu",
+      icon: <GrAppsRounded />,
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+      icon: <RiCustomerServiceFill />,
+    },
+  ];
   return (
     <div className="bg-black flex flex-col items-center w-full">
       <section className="w-[80%] max-w-[1200px] grid grid-cols-1 md:grid-cols-9 gap-5 py-20 text-white border-b border-zinc-800">
@@ -23,22 +53,17 @@ function Footer() {
           </p>
         </div>
         <div className="col-span-2">
-          <h5 className="text-2xl mb-5">Working Hours</h5>
-          <div className="flex gap-2 mb-5">
-            <p className="text-primary font-bold">
-              <GrCaretRightFill />
-            </p>
-            <div>
-              <p>Sunday - Thursday</p>
-              <p className="text-primary">08:00 am - 09:00pm</p>
-            </div>
-          </div>
-          <div className="flex gap-2 mb-5">
-            <p className="text-primary font-bold">O</p>
-            <div>
-              <p>Sunday - Thursday</p>
-              <p className="text-primary">08:00 am - 09:00pm</p>
-            </div>
+          <h5 className="text-2xl mb-5">Useful Links</h5>
+          <div className="flex flex-col gap-2 ">
+            {NAV_ITEM.map((item: any, index: number) => (
+              <a href={item.link}
+                key={index}
+                className="flex gap-3 text-primary text-lg items-center duration-300 group hover:ml-1"
+              >
+                {item.icon}
+                <p className="text-zinc-300 duration-300 group-hover:text-white">{item.name}</p>
+              </a>
+            ))}
           </div>
         </div>
         <div className="col-span-2">
@@ -89,16 +114,28 @@ function Footer() {
           <div className="mt-7">
             <p className="text-primary">Social Media</p>
             <div className="flex items-center justify-start gap-2 mt-2">
-              <a href="" className="p-3 rounded-lg bg-zinc-800 text-white hover:bg-zinc-700 duration-300">
+              <a
+                href=""
+                className="p-3 rounded-lg bg-zinc-800 text-white hover:bg-zinc-700 duration-300"
+              >
                 <FaFacebookF />
               </a>
-              <a href="" className="p-3 rounded-lg bg-zinc-800 text-white hover:bg-zinc-700 duration-300">
+              <a
+                href=""
+                className="p-3 rounded-lg bg-zinc-800 text-white hover:bg-zinc-700 duration-300"
+              >
                 <FaXTwitter />
               </a>{" "}
-              <a href="https://www.instagram.com/houseofteaa?igsh=MTF1c3FjYTBzeTVrcg==" className="p-3 rounded-lg bg-zinc-800 text-white hover:bg-zinc-700 duration-300">
+              <a
+                href="https://www.instagram.com/houseofteaa?igsh=MTF1c3FjYTBzeTVrcg=="
+                className="p-3 rounded-lg bg-zinc-800 text-white hover:bg-zinc-700 duration-300"
+              >
                 <FaInstagram />
               </a>
-              <a href="" className="p-3 rounded-lg bg-zinc-800 text-white hover:bg-zinc-700 duration-300">
+              <a
+                href=""
+                className="p-3 rounded-lg bg-zinc-800 text-white hover:bg-zinc-700 duration-300"
+              >
                 <FaYoutube />
               </a>{" "}
             </div>
@@ -113,8 +150,12 @@ function Footer() {
           Abaqas{" "}
         </a>
         | © All rights reserved!
-      </div> */}<div className="text-center flex flex-col md:flex-row w-[90%] max-w-[1200px] text-white items-center justify-around py-10 font-sans text-sm md:text-base">
-        <p>&copy; {new Date().getFullYear()}  House of Tea. <span className="text-zinc-400">All rights reserved!</span> </p>
+      </div> */}
+      <div className="text-center flex flex-col md:flex-row w-[90%] max-w-[1200px] text-white items-center justify-around py-10 font-sans text-sm md:text-base">
+        <p>
+          &copy; {new Date().getFullYear()} House of Tea.{" "}
+          <span className="text-zinc-400">All rights reserved!</span>{" "}
+        </p>
         <a href="https://ziqx.cc" className=" text-gray-300 my-2">
           ⚡ ziqx.cc
         </a>

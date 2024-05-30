@@ -383,7 +383,7 @@ h1 {
   right: 25px;
   bottom: 25px;
   color: white;
-  background-color:#2d2d2d;
+  background-color:var(--primary);
   position: fixed;
   right: 50px;
   bottom: 50px;
@@ -391,7 +391,7 @@ h1 {
   width: 46px;
   cursor: pointer;
   border-radius: 50px;
-  box-shadow: 0 10px 30px var(--primary);
+  box-shadow: 0 10px 20px #454545;
   z-index: 999;
   opacity: 0;
   visibility: hidden;
@@ -420,7 +420,7 @@ h1 {
   text-align: center;
   line-height: 46px;
   font-size: 24px;
-  color: gray;
+  color: rgb(226, 226, 226);
   left: 0;
   top: -2px;
   height: 46px;
@@ -446,8 +446,7 @@ h1 {
   line-height: 46px;
   font-size: 24px;
   opacity: 0;
-  -webkit-text-fill-color: var(--primary);
-  left: 0;
+  -webkit-text-fill-color:#fff;
   top: -2px;
   height: 46px;
   width: 46px;
@@ -462,7 +461,7 @@ h1 {
 }
 
 .progressCircle path {
-  stroke: var(--primary);
+  stroke: #fff;
   stroke-width: 7;
   box-sizing: border-box;
   transition: all 200ms linear;
