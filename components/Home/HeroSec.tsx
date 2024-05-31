@@ -61,8 +61,8 @@ const Sliders = () => {
           <div className="text-slide"><h1>A blessing for <br /> every skin.</h1></div>
           <div className="text-slide"><h1>The perfect mix of <br /> old & new.</h1></div>
           <div className="text-slide"><h1>A journey over borders <br /> & generations.</h1></div>
-          <div className="text-slide"><h1>You are the <br /> stylist.</h1></div>
-          <div className="text-slide"><h1>To be on the <br /> forefront.</h1></div>
+          {/* <div className="text-slide"><h1>You are the <br /> stylist.</h1></div>
+          <div className="text-slide"><h1>To be on the <br /> forefront.</h1></div> */}
         </Slider>
       </div>
 
@@ -95,18 +95,23 @@ const Sliders = () => {
         
         ref={imageSliderRef}>
           
+          
           <div className="image-slide overflow-hidden">
-            <div className='w-full h-full' style={{ backgroundImage: `url(images/started_img_n3.jpg)`,backgroundPosition: "center",backgroundSize: "cover",backgroundRepeat: "no-repeat"}}></div>
+            <div className='w-full h-full' style={{ backgroundImage: `url(images/House_of_Tea.jpg)`,backgroundPosition: "center",backgroundSize: "cover",backgroundRepeat: "no-repeat"}}></div>
           </div>
           <div className="image-slide overflow-hidden">
-            <div className='w-full h-full' style={{ backgroundImage: `url(images/started_img_n5.jpg)`,backgroundPosition: "center",backgroundSize: "cover",backgroundRepeat: "no-repeat"}}></div>
+            <div className='w-full h-full' style={{ backgroundImage: `url(assets/DSC0870c.jpg)`,backgroundPosition: "center",backgroundSize: "cover",backgroundRepeat: "no-repeat"}}></div>
           </div>
           <div className="image-slide overflow-hidden">
-            <div className='w-full h-full' style={{ backgroundImage: `url(images/started_img_n6.jpg)`,backgroundPosition: "center",backgroundSize: "cover",backgroundRepeat: "no-repeat"}}></div>
+            <div className='w-full h-full' style={{ backgroundImage: `url(assets/IMG-20240430-WA0020c.jpg)`,backgroundPosition: "center",backgroundSize: "cover",backgroundRepeat: "no-repeat"}}></div>
           </div>
           <div className="image-slide overflow-hidden">
+            <div className='w-full h-full' style={{ backgroundImage: `url(assets/DSC1143c.jpg)`,backgroundPosition: "center",backgroundSize: "cover",backgroundRepeat: "no-repeat"}}></div>
+          </div>
+          
+          {/* <div className="image-slide overflow-hidden">
             <div className='w-full h-full' style={{ backgroundImage: `url(images/services_inner_bg.jpg)`,backgroundPosition: "center",backgroundSize: "cover",backgroundRepeat: "no-repeat"}}></div>
-          </div>
+          </div> */}
         </Slider>
       </div>
     </div>

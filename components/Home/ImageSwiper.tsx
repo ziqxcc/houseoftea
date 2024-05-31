@@ -9,14 +9,18 @@ import { Pagination } from "swiper/modules";
 
 function ImageSwiper() {
   const DATA = [
-    "started_img_n3.jpg",
-    "started_img_n5.jpg",
-    "started_img_n6.jpg",
-    "started_img_n3.jpg",
-    "started_img_n3.jpg",
-    "started_img_n5.jpg",
-    "started_img_n6.jpg",
-    "started_img_n3.jpg",
+    "zinger_combo.jpg",
+    "crush_milk.jpg",
+    "zinger_wrap.jpg",
+    "nuggest_arabic.jpg",
+    "zinger_combo.jpg",
+    "crush_milk.jpg",
+    "zinger_wrap.jpg",
+    "nuggest_arabic.jpg",
+    "zinger_combo.jpg",
+    "crush_milk.jpg",
+    "zinger_wrap.jpg",
+    "nuggest_arabic.jpg",
   ];
   return (
     <div className="imageSwiper">
@@ -43,7 +47,7 @@ function ImageSwiper() {
               // }}
             >
               <img
-                src={`images/${item}`}
+                src={`Products/${item}`}
                 className="w-full h-full object-cover hover:scale-110 duration-500 hover:rotate-1"
               />
             </div>
