@@ -27,7 +27,7 @@ function Navbar() {
       icon:<RiInformation2Line />
     },
     {
-      name: "Location",
+      name: "Outlets",
       link: "/location",
       icon:<GrLocation />
     },
@@ -43,7 +43,11 @@ function Navbar() {
 
     },
   ];
-  // console.log(pathname);
+  const handleClick = () => {
+    const encodedMessage = encodeURIComponent("message");
+    const whatsappUrl = `https://wa.me/+971565221880?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
+  };
   
   return (
     <>
@@ -76,7 +80,7 @@ function Navbar() {
           </div>
           <div  className="hidden md:block btn-pry duration-300 z-10 bg-primary w-fit rounded-3xl ">
             <a
-              href=""
+              href="" onClick={handleClick}
               className="p-2 px-8 w-full h-full duration-500 text-white  z-20 flex items-center gap-3"
             >
               Book Table <HiOutlineArrowRight />

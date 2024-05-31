@@ -14,6 +14,9 @@ function SpecialSec() {
         "Our cafes provide a calm environment that ensures complete tranquility, and our staff is always on hand to respond to customer inquiries",
     },
   ];
+  const Products1 = ["zinger_combo.jpg","crush_milk.jpg"]
+const Products2 = ["zinger_wrap.jpg","nuggest_arabic.jpg"]
+
   return (
     <section
       className=" py-24 duration-300 group text-white flex justify-center"
@@ -22,44 +25,23 @@ function SpecialSec() {
       <div className="w-[80%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-28">
         <div className="grid grid-cols-2 gap-4 md:gap-7" data-aos="fade-up">
           <div className="flex flex-col gap-4 md:gap-7 duration-700 -translate-y-2 group-hover:-translate-y-5" >
-            <div
-              className="h-60 md:h-80 w-full"
-              style={{
-                background: "url(images/grid_gal3.jpg)",
-                backgroundSize: "cover",backgroundPosition:"center",
-              }}
-            >
-              
+          {Products1.map((item:any,index:number)=>(
+              <div
+              className="h-60 md:h-80 w-full overflow-hidden"
+            ><img src={`Products/${item}`} alt="" className="w-full h-full object-cover hover:scale-105 hover:rotate-1 duration-300"/>
+             
             </div>
-            <div
-              className="h-60 md:h-80 w-full"
-              style={{
-                background: "url(images/grid_gal4.jpg)",
-                backgroundSize: "cover",backgroundPosition:"center",
-              }}
-            >
-              
-            </div>
+            ))}
           </div>
           <div className="flex flex-col gap-4 md:gap-7 duration-700 translate-y-2 group-hover:translate-y-5">
-            <div
-              className="h-60 md:h-80 w-full"
-              style={{
-                background: "url(images/grid_gal1.jpg)",
-                backgroundSize: "cover",backgroundPosition:"center",
-              }}
-            >
+            {Products2.map((item:any,index:number)=>(
+              <div
+              className="h-60 md:h-80 w-full overflow-hidden"
+            ><img src={`Products/${item}`} alt="" className="w-full h-full object-cover hover:scale-105 hover:rotate-1 duration-300"/>
              
             </div>
-            <div
-              className="h-60 md:h-80 w-full"
-              style={{
-                background: "url(images/grid_gal2.jpg)",
-                backgroundSize: "cover",backgroundPosition:"center",
-              }}
-            >
-             
-            </div>
+            ))}
+            
           </div>
         </div>
         <div className="flex flex-col justify-center">
