@@ -24,7 +24,7 @@ function Details() {
           <BsWhatsapp className="text-primary text-6xl mt-3" />
           <div>
             <h5 className="text-2xl text-center">Whatsapp</h5>
-            <p className="mt-2 text-center text-primary">+971 56 522 1880
+            <p className="mt-2 text-center text-primary">+971 56 522 1883
 
 </p>
           </div>

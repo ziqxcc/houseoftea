@@ -1,5 +1,10 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import {
   GrAppsRounded,
@@ -56,12 +61,15 @@ function Footer() {
           <h5 className="text-2xl mb-5">Useful Links</h5>
           <div className="flex flex-col gap-2 ">
             {NAV_ITEM.map((item: any, index: number) => (
-              <a href={item.link}
+              <a
+                href={item.link}
                 key={index}
                 className="flex gap-3 text-primary text-lg items-center duration-300 group hover:ml-1"
               >
                 {item.icon}
-                <p className="text-zinc-300 duration-300 group-hover:text-white">{item.name}</p>
+                <p className="text-zinc-300 duration-300 group-hover:text-white">
+                  {item.name}
+                </p>
               </a>
             ))}
           </div>
@@ -115,42 +123,21 @@ function Footer() {
             <p className="text-primary">Social Media</p>
             <div className="flex items-center justify-start gap-2 mt-2">
               <a
-                href=""
+                href="https://wa.me/+971565221880?text=Message"
                 className="p-3 rounded-lg bg-zinc-800 text-white hover:bg-zinc-700 duration-300"
               >
-                <FaFacebookF />
+                <FaWhatsapp />
               </a>
               <a
-                href=""
-                className="p-3 rounded-lg bg-zinc-800 text-white hover:bg-zinc-700 duration-300"
-              >
-                <FaXTwitter />
-              </a>{" "}
-              <a
-                href="https://www.instagram.com/houseofteaa?igsh=MTF1c3FjYTBzeTVrcg=="
+                href="https://www.instagram.com/houseoftea.ae"
                 className="p-3 rounded-lg bg-zinc-800 text-white hover:bg-zinc-700 duration-300"
               >
                 <FaInstagram />
               </a>
-              <a
-                href=""
-                className="p-3 rounded-lg bg-zinc-800 text-white hover:bg-zinc-700 duration-300"
-              >
-                <FaYoutube />
-              </a>{" "}
             </div>
           </div>
         </div>
       </section>
-      {/* <div className="h-20 w-full flex items-center justify-center  text-sm gap-1 text-zinc-500">
-        Copyright © {new Date().getFullYear()} <span className="text-zinc-300"> House of Tea </span>{" "}
-        by{" "}
-        <a href="https://abaqas.in" className="text-primary">
-          {" "}
-          Abaqas{" "}
-        </a>
-        | © All rights reserved!
-      </div> */}
       <div className="text-center flex flex-col md:flex-row w-[90%] max-w-[1200px] text-white items-center justify-around py-10 font-sans text-sm md:text-base">
         <p>
           &copy; {new Date().getFullYear()} House of Tea.{" "}

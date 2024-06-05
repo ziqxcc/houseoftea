@@ -4,7 +4,7 @@ function Service() {
   const DATA = [
     {
       icon: "service_icon1.png",
-      spec: "Birthday Cakes",
+      spec: "Tea & Coffee",
       dis: "Sed ut perspiciatis unde",
     },
     {

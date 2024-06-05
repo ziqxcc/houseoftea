@@ -3,7 +3,7 @@ import React from "react";
 function Counts() {
     const SPEC = [
         {
-          count: "38",
+          count: "45",
           spec: "Branches",
           dis: "Sed ut perspiciatis unde",
         },{

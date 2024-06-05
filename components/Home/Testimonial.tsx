@@ -16,45 +16,45 @@ function Testimonial() {
   const TEST = [
     {
       photo: "rev1.jpg",
-      name: "Abraham Charly",
+      name: "Sarah M",
+      designation: "Los Angeles, CA",
+      dis: "This café is a hidden gem! The coffee is always fresh, and the pastries are to die for. The ambiance is cozy, and the staff is super friendly. I love spending my Sunday mornings here with a good book. Highly recommended!",
+    },
+    {
+      photo: "rev1.jpg",
+      name: "John D",
+      designation: "New York, NY",
+      dis: "I travel a lot for work, and finding a good café is always a challenge. This place exceeded my expectations. Great service, fantastic coffee, and a really welcoming atmosphere. I make it a point to stop by whenever I'm in town.",
+    },
+    {
+      photo: "rev1.jpg",
+      name: "Emily R",
       designation: "CEO, Zangly",
-      dis: "Sed ut perspiciatis unde omnis natus error luptatem accusantium doloremque laudantium totam remriam eaque quae abillo",
+      dis: "I stumbled upon this café by accident, and now it's my go-to spot. The variety of coffee blends is impressive, and their vegan options are amazing. It's a perfect place to meet friends or get some work done. Five stars!",
+    },
+    {
+      photo: "rev1.jpg",
+      name: "Michael B",
+      designation: "Alain",
+      dis: "The latte art here is incredible! Every cup feels like a little piece of art. The staff is knowledgeable and passionate about coffee, which makes the experience even better. Plus, their homemade cakes are delicious",
+    },
+    {
+      photo: "rev1.jpg",
+      name: "Shakir Khan",
+      designation: "Abudhabi",
+      dis: "A friend recommended this café, and I’m so glad they did! The atmosphere is so warm and inviting. I love their seasonal specials and the fact that they use locally sourced ingredients. It’s my favorite spot in the city",
     },
     {
       photo: "rev1.jpg",
       name: "Abraham Charly",
-      designation: "CEO, Zangly",
-      dis: "Sed ut perspiciatis unde omnis natus error luptatem accusantium doloremque laudantium totam remriam eaque quae abillo",
+      designation: "Miami, FL",
+      dis: "Whether you’re looking for a quick coffee on the go or a place to relax and unwind, this café is perfect. The staff always makes you feel at home, and the quality of the coffee is top-notch. Definitely a must-visit!",
     },
     {
       photo: "rev1.jpg",
-      name: "Abraham Charly",
-      designation: "CEO, Zangly",
-      dis: "Sed ut perspiciatis unde omnis natus error luptatem accusantium doloremque laudantium totam remriam eaque quae abillo",
-    },
-    {
-      photo: "rev1.jpg",
-      name: "Abraham Charly",
-      designation: "CEO, Zangly",
-      dis: "Sed ut perspiciatis unde omnis natus error luptatem accusantium doloremque laudantium totam remriam eaque quae abillo",
-    },
-    {
-      photo: "rev1.jpg",
-      name: "Abraham Charly",
-      designation: "CEO, Zangly",
-      dis: "Sed ut perspiciatis unde omnis natus error luptatem accusantium doloremque laudantium totam remriam eaque quae abillo",
-    },
-    {
-      photo: "rev1.jpg",
-      name: "Abraham Charly",
-      designation: "CEO, Zangly",
-      dis: "Sed ut perspiciatis unde omnis natus error luptatem accusantium doloremque laudantium totam remriam eaque quae abillo",
-    },
-    {
-      photo: "rev1.jpg",
-      name: "Abraham Charly",
-      designation: "CEO, Zangly",
-      dis: "Sed ut perspiciatis unde omnis natus error luptatem accusantium doloremque laudantium totam remriam eaque quae abillo",
+      name: "Ibn Aleez",
+      designation: "CEO, Aleez",
+      dis: "I love the vibe of this place. It’s a mix of modern and cozy, and it’s always buzzing with energy. The baristas are friendly and know how to make a perfect cup of coffee. Plus, their loyalty program is great",
     },
   ];
   return (
@@ -88,9 +88,9 @@ function Testimonial() {
 
                 <div
                   key={index}
-                  className="bg-secondary px-8 pb-8 h-[300px] w-full flex flex-col rounded-2xl"
+                  className="bg-secondary px-8 pb-8 h-[340px] w-full flex flex-col rounded-2xl"
                 >
-                  <div className="flex w-full h-10">
+                  <div className="flex w-full h-5">
                     <div
                       className="h-20 w-20 rounded-full mx-auto -translate-y-10"
                       style={{

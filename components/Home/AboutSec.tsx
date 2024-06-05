@@ -34,7 +34,7 @@ function AboutSec() {
           </div>
         </div>
         <div className="group-hover:translate-x-1 duration-500 hidden md:block">
-          <img src="images/about_img.png" className="w-[600px]" />
+          <img src="images/fruit99.png" className="w-[600px]" />
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@ function Header() {
     <div
       className="w-full h-[300px] md:h-[450px] bg-red-600 flex items-center"
       style={{
-        background: "url(images/started_img_n3.jpg)",
+        background: "url(images/services_inner_bg.jpg)",
         backgroundPosition: "top",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
