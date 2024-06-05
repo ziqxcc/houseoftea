@@ -51,7 +51,7 @@ function Navbar() {
   
   return (
     <>
-      <div className="bg-zinc-900 w-full justify-center hidden md:flex">
+      {/* <div className="bg-zinc-900 w-full justify-center hidden md:flex">
         <div className="flex items-center justify-between w-[90%] max-w-[1200px] gap-2 text-primary py-[8px]">
           <p className="flex items-center gap-1 text-sm">
             <MdOutlineAccessTimeFilled />
@@ -69,7 +69,7 @@ function Navbar() {
             <span className="text-white"> 55 MAIN STREET, NEW YORK</span>
           </p>
         </div>
-      </div>
+      </div> */}
       <header className="z-30 w-full flex justify-center bg-black border-b border-zinc-900 nav-bar">
         <div className="h-20 flex justify-between items-center w-[90%] max-w-[1200px]">
           <a href="/"><img src="assets/logo.png" alt="Logo" className="w-12" /></a>
@@ -83,7 +83,7 @@ function Navbar() {
               href="" onClick={handleClick}
               className="p-2 px-8 w-full h-full duration-500 text-white  z-20 flex items-center gap-3"
             >
-              Book Table <HiOutlineArrowRight />
+              Order Now <HiOutlineArrowRight />
             </a>
             <div className="btn-before z-0"></div>
           </div>

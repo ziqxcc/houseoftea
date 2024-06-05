@@ -24,7 +24,7 @@ function Booking() {
               href="" onClick={handleClick}
               className="py-3 px-5 md:py-4 md:px-10 w-full h-full duration-500 text-white  z-20 flex items-center gap-3 uppercase font-semibold"
             >
-              Book Table <HiOutlineArrowRight />
+              Order Now <HiOutlineArrowRight />
             </a>
             <div className="btn-before z-0"></div>
           </div>

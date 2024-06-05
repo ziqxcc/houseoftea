@@ -8,7 +8,7 @@ function JourneySec() {
   const SPEC = [
     {
       icon: <GrAttraction />,
-      count: "38",
+      count: "45",
       spec: "Branches",
       dis: "Sed ut perspiciatis unde",
     },{
