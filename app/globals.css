@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html{
-  scroll-behavior: smooth;overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
   /* text-emphasis-color:#b99272 ; */
 }
 :root {
@@ -39,9 +40,10 @@ h1 {
   line-height: 50px;
 }
 .btn-pry {
-  position: relative;overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
-.bg-darkgray{
+.bg-darkgray {
   background: #0e1317;
 }
 .swiper {
@@ -70,17 +72,23 @@ h1 {
 .btn-pry .btn-before {
   position: absolute;
   height: 60px;
-  width: 130%;rotate: -15deg;transform: translate(0, -110px);
+  width: 130%;
+  rotate: -15deg;
+  transform: translate(0, -110px);
   background-color: #fff;
-  top: 0;right: 0;transition: .7s ease;z-index: -1;
+  top: 0;
+  right: 0;
+  transition: 0.7s ease;
+  z-index: -1;
 }
 .btn-pry:hover .btn-before {
   transform: translate(0);
   rotate: 0deg;
 }
-.btn-pry:hover a{
+.btn-pry:hover a {
   color: var(--primary);
-}.btn-pry:hover button{
+}
+.btn-pry:hover button {
   color: var(--primary);
 }
 .bg-primary {
@@ -92,18 +100,19 @@ h1 {
 .border-primary {
   border-color: var(--primary);
 }
-.outline-primary{
+.outline-primary {
   outline-color: var(--primary);
 }
-.hover-bg-primary:hover{
- background: var(--primary);
+.hover-bg-primary:hover {
+  background: var(--primary);
 }
-.outline-primary-50{
+.outline-primary-50 {
   outline-color: #b992725c;
 }
-.bg-secondary{
+.bg-secondary {
   background: #0e1317;
-}.border-secondary{
+}
+.border-secondary {
   border-color: #0e1317;
 }
 .image-slider {
@@ -226,17 +235,47 @@ h1 {
 }
 
 @media (max-width: 990px) {
+  .slider-control {
+    bottom:  45% !important;
+    left: 25%;
+  }
+  .text-slide h1 {
+    padding-left: 5%;width: 100%;
+  }
+  .slider-control button {
+    padding: 20px;
+    font-size: 12px;
+    margin: 0.2em;
+  }
+  .slider-control button:hover {
+    padding: 20px 30px;
+  }
+
+
+  .image-slide {
+    height: 50vh;
+  }
+
   .block-2,
   .overlay {
     display: none;
+    height: 50vh;
   }
-
+  .image-slider {
+    height: 50vh;
+  }
+  .text-slider {
+    height: 50vh;
+  }
   .block-1 {
     width: 50%;
+    opacity: 90%;
+    height: 50vh;
   }
 
   .block-3 {
     width: 12%;
+    height: 50vh;
   }
 
   .slide-slick {
@@ -247,13 +286,10 @@ h1 {
     font-size: 30px !important;
   }
 
-  .text-slider-wrapper {
-    position: absolute;
-    top: 50% !important;
-  }
-
   .slider-control {
-    left: 22.5%;
+    left: 25%;
+  }.text-slider-wrapper {
+    top: 30% !important;
   }
 }
 
@@ -329,8 +365,6 @@ h1 {
   text-transform: capitalize;
 }
 
-
-
 /* .swiper-pagination {
   margin-bottom: -40px !important ;
 } */
@@ -338,52 +372,56 @@ h1 {
   padding-bottom: 60px !important;
   padding-top: 20px !important;
 }
-.testimonials .swiper-pagination-bullet{
-  background: #bcbcbc !important;transition: .5s !important;
+.testimonials .swiper-pagination-bullet {
+  background: #bcbcbc !important;
+  transition: 0.5s !important;
 }
-.testimonials .swiper-pagination-bullet-active{
+.testimonials .swiper-pagination-bullet-active {
   background: var(--primary) !important;
   width: 30px !important;
   border-radius: 25px !important;
 }
 
-
-::-webkit-scrollbar{
-  width: 10px;background: #12171b;padding: 0 5px;
+::-webkit-scrollbar {
+  width: 10px;
+  background: #12171b;
+  padding: 0 5px;
 }
-::-webkit-scrollbar-thumb{
-  background: var(--primary);border-radius: 4px;
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
 }
 
 .imageSwiper .swiper-slide {
   width: fit-content !important;
 }
-.imageSwiper .slick-slide.slick-center{
+.imageSwiper .slick-slide.slick-center {
   width: 400px !important;
 }
 
-
-.text-Merienda{
+.text-Merienda {
   font-family: "Merienda", cursive;
 }
 
-.count-before{
+.count-before {
   position: relative;
 }
-.count-before::before{
-  position: absolute;content: '- - - - - - - - - - - - - - - - - - - - - - - - ';
-  width: 100%;left:0;font-size: 20px;z-index: 0;
+.count-before::before {
+  position: absolute;
+  content: "- - - - - - - - - - - - - - - - - - - - - - - - ";
+  width: 100%;
+  left: 0;
+  font-size: 20px;
+  z-index: 0;
 }
 
-
 /* ------------------scroll to top------------------------- */
-
 
 .progressWrap {
   right: 25px;
   bottom: 25px;
   color: white;
-  background-color:var(--primary);
+  background-color: var(--primary);
   position: fixed;
   right: 50px;
   bottom: 50px;
@@ -446,7 +484,7 @@ h1 {
   line-height: 46px;
   font-size: 24px;
   opacity: 0;
-  -webkit-text-fill-color:#fff;
+  -webkit-text-fill-color: #fff;
   top: -2px;
   height: 46px;
   width: 46px;
@@ -467,11 +505,9 @@ h1 {
   transition: all 200ms linear;
 }
 
-
-.actived{
+.actived {
   background-color: #0e1317 !important;
 }
-
 
 /* #nprogress .bar {
   background: #b99272;
@@ -487,7 +523,6 @@ h1 {
   border-left-color: #29d;
 } */
 
-
 .sliderContainer {
   width: 80%;
   margin: 0 auto;
@@ -501,16 +536,18 @@ h1 {
   /* height: 400px; */
   transition: width 0.5s ease;
 }
-.slide-row{
-  background:#000 !important ;
+.slide-row {
+  background: #000 !important ;
 }
 .active {
-  
   background-color: #680f0f;
-  transform: scale(1.1);transition: width 0.5s ease;
-}.actived {
+  transform: scale(1.1);
+  transition: width 0.5s ease;
+}
+.actived {
   width: 400px !important;
-  transform: scale(1.1);background-color: #680f0f;
+  transform: scale(1.1);
+  background-color: #680f0f;
 }
 
 /* button {
@@ -519,12 +556,13 @@ h1 {
   font-size: 16px;
   cursor: pointer;
 } */
-.swiper_container{
+.swiper_container {
   background-color: #000 !important;
   /* margin-bottom: 40px !important; */
 }
 
-.loc-SwiperSlide{
+.loc-SwiperSlide {
   width: 80% !important;
-  max-width: 600px !important;overflow-y: hidden;
+  max-width: 600px !important;
+  overflow-y: hidden;
 }
