@@ -5,7 +5,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 function Booking() {
   const handleClick = () => {
     const encodedMessage = encodeURIComponent("message");
-    const whatsappUrl = `https://wa.me/+971565221880?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/+971565221883?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
   };
   return (

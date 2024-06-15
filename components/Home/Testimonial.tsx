@@ -17,19 +17,19 @@ function Testimonial() {
     {
       photo: "rev1.jpg",
       name: "Sarah M",
-      designation: "Los Angeles, CA",
+      designation: "Abu Dhabi",
       dis: "This café is a hidden gem! The coffee is always fresh, and the pastries are to die for. The ambiance is cozy, and the staff is super friendly. I love spending my Sunday mornings here with a good book. Highly recommended!",
     },
     {
       photo: "rev1.jpg",
       name: "John D",
-      designation: "New York, NY",
+      designation: "Fujairah",
       dis: "I travel a lot for work, and finding a good café is always a challenge. This place exceeded my expectations. Great service, fantastic coffee, and a really welcoming atmosphere. I make it a point to stop by whenever I'm in town.",
     },
     {
       photo: "rev1.jpg",
       name: "Emily R",
-      designation: "CEO, Zangly",
+      designation: "Ajman",
       dis: "I stumbled upon this café by accident, and now it's my go-to spot. The variety of coffee blends is impressive, and their vegan options are amazing. It's a perfect place to meet friends or get some work done. Five stars!",
     },
     {
@@ -41,19 +41,19 @@ function Testimonial() {
     {
       photo: "rev1.jpg",
       name: "Shakir Khan",
-      designation: "Abudhabi",
+      designation: "Abu Dhabi",
       dis: "A friend recommended this café, and I’m so glad they did! The atmosphere is so warm and inviting. I love their seasonal specials and the fact that they use locally sourced ingredients. It’s my favorite spot in the city",
     },
     {
       photo: "rev1.jpg",
       name: "Abraham Charly",
-      designation: "Miami, FL",
+      designation: "Ras Al Khaima",
       dis: "Whether you’re looking for a quick coffee on the go or a place to relax and unwind, this café is perfect. The staff always makes you feel at home, and the quality of the coffee is top-notch. Definitely a must-visit!",
     },
     {
       photo: "rev1.jpg",
       name: "Ibn Aleez",
-      designation: "CEO, Aleez",
+      designation: "Sharjah",
       dis: "I love the vibe of this place. It’s a mix of modern and cozy, and it’s always buzzing with energy. The baristas are friendly and know how to make a perfect cup of coffee. Plus, their loyalty program is great",
     },
   ];
