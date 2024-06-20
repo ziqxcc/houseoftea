@@ -123,7 +123,7 @@ function Footer() {
             <p className="text-primary">Social Media</p>
             <div className="flex items-center justify-start gap-2 mt-2">
               <a
-                href="https://wa.me/+971565221880?text=Message"
+                href="https://wa.me/+971565221883?text=Message"
                 className="p-3 rounded-lg bg-zinc-800 text-white hover:bg-zinc-700 duration-300"
               >
                 <FaWhatsapp />
