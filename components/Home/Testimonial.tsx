@@ -16,45 +16,48 @@ function Testimonial() {
   const TEST = [
     {
       photo: "rev1.jpg",
-      name: "Sarah M",
+      name: "Fatima Al Mahmoud",
+      designation: "Baniyas, Abu Dhabi",
+      dis: "يقدم مطعم بيت الشاي طعامًا رائعًا وخدمة ممتازة! لقد استمتعت بتجربة غذائية فريدة في منزل الشاي في بني ياس. الغلاف الجوي رائع والأطعمة الطازجة ولذيذة بشكل استثنائي",
+      lng:"arabic"
+    },
+    {
+      photo: "rev1.jpg",
+      name: "Khalid Al Ameri",
+      designation: "Khalidiya, Abu Dhabi",
+      dis: "تجربة رائعة في مقهى بيت الشاي في منطقة الخالدية! الخدمة سريعة والطعام لذيذ جدًا. أنصح بتجربة الكبسة والشاي العربي الرائع هنا",
+    lng:"arabic"
+    },
+    {
+      photo: "rev1.jpg",
+      name: "Mohammad Al Kaabi",
+      designation: "Al Ain, Abu Dhabi",
+      dis: "Had a wonderful lunch at House of Tea in Al Ain. The menu has a good variety, and the food quality is top-notch. The service was efficient, and the prices are reasonable.",
+    },
+    {
+      photo: "rev1.jpg",
+      name: "Fatima Ibrahim",
+      designation: "Abu Dhabi ",
+      dis: "Enjoyed a fantastic breakfast at House of Tea .  the food was fresh and tasty. Their Paratha sandwich  and karak tea are simply delicious. Will definitely visit again",
+    },
+    {
+      photo: "rev1.jpg",
+      name: "Ali Al Mazrouei",
+      designation: "Khalifa City, Abu Dhabi",
+      dis: "House of Tea in Khalifa City is my go-to spot for a quick lunch. The sandwiches are excellent, and  fresh. The staff is attentive",
+    },
+    {
+      photo: "rev1.jpg",
+      name: "Imran Khan",
+      designation: "Musaffah, Abu Dhabi",
+      dis: "شاہامہ، ابوظبی میں ہاؤس آف ٹی کی چائے کافیٹیریا میں خوراک بہت ہی خوش زائقہ اور تازگی سے بھرپور تھی، خاص طور پر ان کے پراتے اور چائے۔ خدمت تیز اور دوستانہ تھی، جس نے تیز خوراک کے لیے ایک بہترین جگہ بنا دیا",
+    lng:"arabic"
+    },
+    {
+      photo: "rev1.jpg",
+      name: "Juan dela Cruz",
       designation: "Abu Dhabi",
-      dis: "This cafeteria is a hidden gem! The coffee is always fresh, and the pastries are to die for. The ambiance is cozy, and the staff is super friendly. I love spending my Sunday mornings here with a good book. Highly recommended!",
-    },
-    {
-      photo: "rev1.jpg",
-      name: "John D",
-      designation: "Abu Dhabi",
-      dis: "I travel a lot for work, and finding a good cafeteria is always a challenge. This place exceeded my expectations. Great service, fantastic coffee, and a really welcoming atmosphere. I make it a point to stop by whenever I'm in town.",
-    },
-    {
-      photo: "rev1.jpg",
-      name: "Emily R",
-      designation: "Abu Dhabi",
-      dis: "I stumbled upon this cafeteria by accident, and now it's my go-to spot. The variety of coffee blends is impressive, and their vegan options are amazing. It's a perfect place to meet friends or get some work done. Five stars!",
-    },
-    {
-      photo: "rev1.jpg",
-      name: "Michael B",
-      designation: "Alain",
-      dis: "The latte art here is incredible! Every cup feels like a little piece of art. The staff is knowledgeable and passionate about coffee, which makes the experience even better. Plus, their homemade cakes are delicious",
-    },
-    {
-      photo: "rev1.jpg",
-      name: "Shakir Khan",
-      designation: "Abu Dhabi",
-      dis: "A friend recommended this cafeteria, and I’m so glad they did! The atmosphere is so warm and inviting. I love their seasonal specials and the fact that they use locally sourced ingredients. It’s my favorite spot in the city",
-    },
-    {
-      photo: "rev1.jpg",
-      name: "Abraham Charly",
-      designation: "Abu Dhabi",
-      dis: "Whether you’re looking for a quick coffee on the go or a place to relax and unwind, this cafeteria is perfect. The staff always makes you feel at home, and the quality of the coffee is top-notch. Definitely a must-visit!",
-    },
-    {
-      photo: "rev1.jpg",
-      name: "Ibn Aleez",
-      designation: "Sharjah",
-      dis: "I love the vibe of this place. It’s a mix of modern and cozy, and it’s always buzzing with energy. The baristas are friendly and know how to make a perfect cup of coffee. Plus, their loyalty program is great",
+      dis: "Ang House of Tea , Abu Dhabi ay isang napakasarap na karanasan! Ang pagkain ay masarap at puno ng sariwang lasa, lalo na ang kanilang chili paratha at tsaa. Ang serbisyo ay mabilis at magiliw",
     },
   ];
   return (
@@ -108,9 +111,9 @@ function Testimonial() {
                     <FaStar />
                     <FaStar />
                   </div>
-                  <p className="text-zinc-400 text-[15px]">{item.dis}</p>
+                  <p className={`text-zinc-400 text-[15px] ${item.lng=="arabic"&& "text-[17px] font-arabic"}`}>{item.dis}</p>
                   <h6 className="font-bold mt-5">{item.name}</h6>
-                  <p className="text-primary text-sm">{item.designation}</p>
+                  <p className="text-primary text-sm ">{item.designation}</p>
                 </div>
               </div>
             </SwiperSlide>

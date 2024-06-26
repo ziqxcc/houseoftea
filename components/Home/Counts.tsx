@@ -5,15 +5,15 @@ function Counts() {
         {
           count: "45",
           spec: "Branches",
-          dis: "Sed ut perspiciatis unde",
+          dis: "across the world",
         },{
           count: "999",
-          spec: "Our Staffs",
-          dis: "Sed ut perspiciatis unde",
+          spec: "Staffs",
+          dis: "in our shop",
         },{
           count: "99M",
           spec: "Happy Customers",
-          dis: "Sed ut perspiciatis unde",
+          dis: "across the world",
         },
       ];
   return (

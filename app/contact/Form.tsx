@@ -48,11 +48,11 @@ function Form() {
             
           </div>
           <div  className="btn-pry duration-300 z-10 bg-primary w-fit rounded-3xl col-span-1 md:col-start-2 mx-auto">
-            <button type="submit"
+            <a href="mailto:info@houseoftea.ae" type="submit"
               className="p-3 px-8 w-full h-full duration-500 text-white z-20 flex items-center gap-3 uppercase font-[700]"
             >
               Send Us Message <HiOutlineArrowRight />
-            </button>
+            </a>
             <div className="btn-before z-0"></div>
           </div>
         </form>

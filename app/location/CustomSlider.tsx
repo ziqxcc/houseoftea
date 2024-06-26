@@ -8,8 +8,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-import { GrPhone } from "react-icons/gr";
-import { FaBackward, FaForward } from "react-icons/fa";
+import { GrPhone, GrWhatsapp } from "react-icons/gr";
+import { FaBackward, FaForward, FaWhatsapp } from "react-icons/fa";
 import { SHOPS } from "./Data";
 
 const CustomSlider = () => {
@@ -60,8 +60,8 @@ const CustomSlider = () => {
                       {item.address}
                     </p>
                   </h5>
-                  <a href={`tel:${item.phone}`}> <h5 className="md:text-2xl p-2 px-4 rounded-xl flex gap-3 items-center duration-300 hover:bg-zinc-800">
-                    <GrPhone className="text-primary text-2xl" /> {item.phone}
+                  <a href={`https://wa.me/${item.phone}`} target="_blank" > <h5 className="md:text-2xl p-2 px-4 rounded-xl flex gap-3 items-center duration-300 hover:bg-zinc-800">
+                    <FaWhatsapp  className="text-primary text-2xl" /> {item.phone}
                   </h5></a>
                 </div>
               </div>
