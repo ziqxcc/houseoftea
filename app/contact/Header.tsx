@@ -5,8 +5,8 @@ function Header() {
     <div
       className="w-full h-[300px] md:h-[450px] flex items-center"
       style={{
-        background: "url(images/location_bg.jpg)",
-        backgroundPosition: "top",
+        background: "url(images/House_of_Tea_cut.jpg)",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}

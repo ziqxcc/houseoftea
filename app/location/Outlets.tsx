@@ -1,6 +1,7 @@
 import React from "react";
 import { SHOPS } from "./Data";
 import { GrPhone } from "react-icons/gr";
+import { FaWhatsapp } from "react-icons/fa";
 
 function Outlets() {
   return (
@@ -45,8 +46,8 @@ function Outlets() {
                       {item.address}
                     </p>
                   </h5>
-                 <a href={`tel:${item.phone}`}> <h5 className="md:text-2xl p-2 px-4 rounded-xl flex gap-3 items-center duration-300 hover:bg-zinc-800">
-                    <GrPhone className="text-primary text-2xl" /> {item.phone}
+                 <a href={`https://wa.me/${item.phone}`} target="_blank"> <h5 className="md:text-2xl p-2 px-4 rounded-xl flex gap-3 items-center duration-300 hover:bg-zinc-800">
+                    <FaWhatsapp  className="text-primary text-2xl" /> {item.phone}
                   </h5></a>
                 </div>
               </div>

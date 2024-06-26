@@ -36,7 +36,7 @@ function Service() {
             />
           </div>
           <h5 className="text-2xl mt-6 mb-1">{item.spec}</h5>
-          <p className="text-zinc-500">{item.dis}</p>
+          <p className="text-zinc-500">Available in our shop</p>
         </div>  
         ))}
         

@@ -10,22 +10,22 @@ function JourneySec() {
       icon: <GrAttraction />,
       count: "45",
       spec: "Branches",
-      dis: "Sed ut perspiciatis unde",
+      dis: "across the world",
     },{
       icon: <GrUser />,
       count: "999",
-      spec: "Our Staffs",
-      dis: "Sed ut perspiciatis unde",
+      spec: "Staffs",
+      dis: "in our shop",
     },{
       icon: <GrAppsRounded   />,
       count: "299",
-      spec: "Our Menu",
-      dis: "Sed ut perspiciatis unde",
+      spec: "Menu Item",
+      dis: "in our shops",
     },{
       icon: <GrValidate  />,
       count: "99M",
       spec: "Happy Customers",
-      dis: "Sed ut perspiciatis unde",
+      dis: "across the world",
     },
   ];
   return (
