@@ -5,6 +5,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -268,7 +270,7 @@ h1 {
     height: 50vh;
   }
   .text-slider {
-    height: 50vh;
+    height: 50vh;width: 93% !important;
   }
   .block-1 {
     width: 50%;
@@ -288,10 +290,7 @@ h1 {
   .text-slide h1 {
     font-size: 30px !important;
   }
-
-  .slider-control {
-    left: 25%;
-  }.text-slider-wrapper {
+.text-slider-wrapper {
     top: 30% !important;
   }
 }
@@ -569,3 +568,11 @@ h1 {
   max-width: 600px !important;
   overflow-y: hidden;
 }
+
+
+
+
+/* ////////////////////////////////////////////// */
+
+
+

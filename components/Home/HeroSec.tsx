@@ -43,7 +43,7 @@ const Sliders = () => {
   // };
 
   return (
-    <div className='overflow-hidden w-ful h-fit'>
+    <div className='overflow-hidden w-full h-fit'>
       <div className="text-slider-wrapper">
         <Slider
         autoplay={ true}
@@ -66,12 +66,12 @@ const Sliders = () => {
         </Slider>
       </div>
 
-      <div className="slider-control">
+      <div className="slider-control overflow-hidden">
         <div className="prev"><button type="button"><IoIosArrowBack /></button></div>
         <div className="next"><button type="button"><IoIosArrowForward /></button></div>
       </div>
 
-      <div className="blocks">
+      <div className="blocks overflow-hidden">
         <div className="block-1"></div>
         <div className="block-2"></div>
         <div className="block-3"></div>
@@ -79,7 +79,7 @@ const Sliders = () => {
 
       <div className="overlay"></div>
 
-      <div className="image-slider">
+      <div className="image-slider overflow-hidden">
         <Slider 
         
         autoplay={ true}

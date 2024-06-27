@@ -19,10 +19,10 @@ const Products2 = ["zinger_wrap.jpg","nuggest_arabic.jpg"]
 
   return (
     <section
-      className=" py-24 duration-300 group text-white flex justify-center"
+      className="overflow-x-hidden py-24 duration-300 group text-white flex justify-center "
       style={{ background: "url(assets/category_bg.jpg)" }}
     >
-      <div className="w-[80%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-28">
+      <div className="w-[80%] max-w-[1200px] grid grid-cols-1 md:grid-cols-2 gap-28 overflow-hidden">
         <div className="grid grid-cols-2 gap-4 md:gap-7" data-aos="fade-up">
           <div className="flex flex-col gap-4 md:gap-7 duration-700 -translate-y-2 group-hover:-translate-y-5" >
           {Products1.map((item:any,index:number)=>(
