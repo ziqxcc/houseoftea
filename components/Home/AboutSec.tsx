@@ -18,7 +18,7 @@ function AboutSec() {
             employers. The United Arab Emirates (UAE), known for its diverse and
             noble culture, reflects the dreams of His Highness Sheikh Zayed bin
             Sultan Al Nahyan. In this inspiring environment, House of Tea was
-            founded. In 1992, Mr. Majed Saad Abdullah Ali Almenhali and Rashid
+            founded. Mr. Majed Saad Abdullah Ali Almenhali and Rashid
             Thaniyullathil started House of Tea in Baniyas, Abu Dhabi. They
             aimed to offer clean, high-quality, healthy, and delicious meals
             made with love and dedication. Their small cafeteria quickly became
