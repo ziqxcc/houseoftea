@@ -17,8 +17,8 @@ const slides = [
 
 const SwiperComponent: React.FC = () => {
   return (
-    <div className="bdt-timeline-container">
-      <div className="upk-salf-slider-wrapper">
+    <div className="bdt-timeline-container bg-gray-900">
+      <div className="upk-salf-slider-wrapper bg-red-800">
         <Swiper
           spaceBetween={30}
           effect={'slide'}
@@ -44,9 +44,12 @@ const SwiperComponent: React.FC = () => {
         >
           {slides.map(slide => (
             <SwiperSlide key={slide.id}>
-              <div className="upk-salf-item">
+              <div className="upk-salf-item"
+              style={{
+                background:"url(images/shop_front.jpg)"
+              }}>
                 <div className="upk-salf-image-wrap">
-                  <img className="upk-xanc-img" src={`https://picsum.photos/id/${slide.id}/1200/800`} alt={slide.title} />
+                  <img className="upk-xanc-img" src={`images/shop_front.jpg`} alt={slide.title} />
                 </div>
                 <div className="upk-salf-content-wrap">
                   <h3 className="upk-salf-title" data-swiper-parallax-y="-150" data-swiper-parallax-duration="1200">{slide.title}</h3>
