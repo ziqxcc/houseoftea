@@ -7,6 +7,14 @@ import Booking from "@/components/Common/Booking";
 import Footer from "@/components/Common/Footer";
 import Service from "./Service";
 import Testimonial from "@/components/Home/Testimonial";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'About - House of Tea',
+  icons: {
+    icon: '/favicon.ico',
+  },
+}
 
 function page() {
   return (

@@ -11,7 +11,13 @@ import Testimonial from "@/components/Home/Testimonial";
 import Booking from "@/components/Common/Booking";
 import Counts from "@/components/Home/Counts";
 import ImageSwiper from "@/components/Home/ImageSwiper";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: 'House of Tea',
+  icons: {
+    icon: '/favicon.ico',
+  },
+}
 export default function Home() {
   const Sliders = dynamic(() => import("../components/Home/HeroSec"), {
     ssr: false,
