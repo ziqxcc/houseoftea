@@ -7,7 +7,7 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Outlets - House of Tea',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/assets/logo.png',
   },
 }
 
