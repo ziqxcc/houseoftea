@@ -15,7 +15,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: 'House of Tea',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/assets/logo.png',
   },
 }
 export default function Home() {
