@@ -2,6 +2,14 @@ import React from 'react'
 import Header from './Header'
 import Details from './Details'
 import Form from './Form'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Contact - House of Tea',
+  icons: {
+    icon: '/favicon.ico',
+  },
+}
 
 function page() {
   return (
