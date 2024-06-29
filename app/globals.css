@@ -434,7 +434,7 @@ h1 {
   box-shadow: 0 10px 20px #454545;
   z-index: 999;
   opacity: 0;
-  visibility: hidden;
+  visibility: hidden;display: flex;justify-content: center;align-items: center;
   transform: translateY(15px);
   transition: all 200ms linear;
 }
@@ -454,17 +454,9 @@ h1 {
   transform: translateY(0);
 }
 
-.progressWrap::after {
-  position: absolute;
-  content: "↑";
+.progressWrap i {
   text-align: center;
   line-height: 46px;
-  font-size: 24px;
-  color: rgb(226, 226, 226);
-  left: 0;
-  top: -2px;
-  height: 46px;
-  width: 46px;
   cursor: pointer;
   display: block;
   z-index: 1;
@@ -481,7 +473,7 @@ h1 {
 
 .progressWrap::before {
   position: absolute;
-  content: "↑";
+  /* content: "↑"; */
   text-align: center;
   line-height: 46px;
   font-size: 24px;
