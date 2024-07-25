@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { SHOPS } from "./Data";
 import { GrPhone } from "react-icons/gr";
 import { FaWhatsapp } from "react-icons/fa";
+import { findNearestShop, getUserLocation, Shop } from "./demoNearestShop";
 
 function Outlets() {
+
   return (
     <>
       {SHOPS.map((item: any, index: number) => (
@@ -37,6 +39,7 @@ function Outlets() {
                     height="100%"
                     style={{ border: "0" }}
                     loading="lazy"
+  allow="geolocation 'self'; encrypted-media 'self';"
                   ></iframe>
                 </div>
                 <div className="text-white  p-5 px-7 flex flex-col md:flex-row gap-3 md:gap-0 items-center justify-between">
