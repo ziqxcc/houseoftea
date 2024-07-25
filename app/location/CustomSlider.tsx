@@ -35,13 +35,6 @@ console.log(nearestCafe);
         <img src="/assets/gps-technology-background-vector copy.jpg" className="absolute top-0 left-0 hidden md:block" />
         <img src="/assets/gps-technology-background-vector ph.jpg" className="absolute top-0 left-0 md:hidden" />
       <div className="text-white z-10 flex ">{nearestCafe ? (
-        // <div className="text-white ">
-        //   <h2>Nearest Café</h2>
-        //   <p>Name: {nearestCafe?.name}</p>
-        //   <p>Address: {nearestCafe?.address}</p>
-        //   <p>Phone: {nearestCafe?.phone}</p>
-        //   <iframe src={nearestCafe?.location} width="600" height="450" style={{ border: 0 }} loading="lazy"></iframe>
-        // </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-5 mt-60 md:mt-0 md:translate-x-[150px]">
         <div className="text-white flex flex-col gap-3 md:gap-5 items-center"><p className=" text-2xl md:text-3xl font-semibold text-center w-[70%] md:w-[50%]"><span className="text-primary">{nearestCafe?.name||"Baladiya Market"}</span> is Your Nearest Cafe </p>
         <p className="text-sm text-zinc-400 w-[70%] md:w-[40%] text-center">Finding your nearest cafe with fast service can greatly enhance your experience, <span className="text-white">{nearestCafe?.address || "Behind Lulu Hypermarket, Abu Dhabi"}</span></p>
