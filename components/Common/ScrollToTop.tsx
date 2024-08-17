@@ -43,7 +43,7 @@ const ScrollProgress = () => {
     
 
   return (
-    <a href='https://wa.me/+971565221883' target='_blank' className="progressWrap progress-wrap" id="progress-scroll">
+    <a href='https://www.houseoftea.shop/' target='_blank' className="progressWrap progress-wrap" id="progress-scroll">
       <svg className="progressCircle progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
       </svg>
