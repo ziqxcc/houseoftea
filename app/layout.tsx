@@ -9,7 +9,7 @@ import Footer from "@/components/Common/Footer";
 import ScrollToTop from "@/components/Common/ScrollToTop";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
-import '../components/Common/Analytics'
+import Analytics from "../components/Common/Analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Analytics/>
         <Navbar />
         <ScrollToTop />
         {children}
