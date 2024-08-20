@@ -9,9 +9,7 @@ import Footer from "@/components/Common/Footer";
 import ScrollToTop from "@/components/Common/ScrollToTop";
 import NProgress from "nprogress";
 import "nprogress/nprogress.css";
-import ReactGA from "react-ga4";
-
-ReactGA.initialize("AW-11457241006");
+import '../components/Common/Analytics'
 
 const inter = Inter({ subsets: ["latin"] });
 
